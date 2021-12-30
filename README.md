@@ -26,6 +26,13 @@ Por otro lado, el "Modo B" permite, a partir de un diccionario de usuarios previ
 
 Tras ejecutar el "Modo B" de IsABot.py , los resultados obtenidos se podran interpretar mediante statometer.py . Esto permitirá obtener facilmente estadigrafos tales como la media, la cantidad de cuentas cuyos datos no se pidieron recuperar, ademas de las cuentas cuyos valores de Botometro se encuentran sobre ciertos umbrales que determinarian si son o no un bot, lo que permitiria identificar los falsos negativos/positivos segun sea el caso.
 
+### Herramienta para crear el árbol
+
+Para generar correctamente el árbol con la herramienta creada, se deben utilizar dos csv distintos entre si. Uno de ellos será el de entrenamiento, es imporante que este dataset tenga la columna 'bot'. Y el segundo dataset será el que tenga los usuarios a predecir.
+
+![imagen](https://user-images.githubusercontent.com/69986261/147791533-5d88cbbe-d05d-4c0f-b24f-96617b3afb98.png)
+
+Una vez listos ambos datasets, se deberá colocar el nombre donde se indica en la imagen anterior y correr el "notebook" completamente. El árbol será construido y además se realizaran las predicciones.
 
 
 
