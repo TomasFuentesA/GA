@@ -1,7 +1,22 @@
 # GA
 
+### Generar Dataset
 
-# Botometer
+Para generar un dataset de usuarios a evaluar por la herramienta, en primera instancia se debe asociar o crear una cuenta de Twitter con permisos de desarrollador, esto se realiza en el sitio oficial https://developer.twitter.com/, siguiendo el paso a paso correspondiente. En el portal de desarrollo de Twitter se debe crear un nuevo proyecto, en el cual se le otorgarán Keys y Tokens (publicos y privados), cada par se debe ingresar en el código de ExtraccionTwitter.py de forma directa en las variables de nombre:
+
+>API_KEY 
+
+>API_KEY_SECRET 
+
+>ACCESS_TOKEN 
+
+>ACCESS_TOKEN_SECRET
+
+Con dichas variables ya agregadas se puede ejecutar el código fuente para realizar una extracción de usuarios correspondientes al territorio chileno. En caso de querer cambiar el país de extracción se debe cambiar el país en la siguiente variable:
+
+> places = api.search_geo(query="CHILE", granularity="country") [Línea 49]
+
+### Botometer
 
 Para trabajar con Botometer se utiliza el archivo IsABot.py que al ejecutarse, abre una ventana de navegador con el sitio https://botometer.osome.iu.edu/ . Una vez iniciada la ejecucion del programa, se cuenta con 120 segundos para realizar el login en el sitio con una cuenta de Tweeter propia. Se decidio un margen de 120 segundos puesto que, al realizar muchas consultas, el sitio solicita realizar el login mas de una vez.
 
